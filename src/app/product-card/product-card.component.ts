@@ -10,7 +10,7 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
     trigger('flyAnimation', [
       state('static', style({ transform: 'translateY(0)', opacity: 1 })),
       state('levitating', style({ transform: 'translateY(-100px) scale(1)' })),
-      state('flying', style({ transform: 'translateY(-3000px) rotate(20deg) rotate(-60deg)', opacity: 0.7 })),
+      state('flying', style({ transform: 'translateY(-3000px) rotate(20deg) rotate(-60deg)', opacity: 0 })),
       transition('static => levitating', animate('0.5s ease-in-out')),
       transition('levitating => flying', animate('1s ease-in-out')),
       transition('flying => static', animate('1s ease-out'))
