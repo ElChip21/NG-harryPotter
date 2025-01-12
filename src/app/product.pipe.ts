@@ -4,7 +4,7 @@ import { Product } from './product';
 
 @Pipe({ name: 'applySort' })
 export class ApplySortPipe implements PipeTransform {
-  transform(products: Product[], sortSelected: number|string): Product[] {
+  transform(products: Product[], sortSelected: string): Product[] {
     if (!products) return [];
     
     let sortedProducts = products.slice();

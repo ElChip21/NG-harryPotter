@@ -4,4 +4,7 @@ export interface Product {
     name: string;
     isFavorite: boolean;
     createdDate: Date;
+    rarity: string;
+    house: string;
+    grade: string;
 }
