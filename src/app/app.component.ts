@@ -60,7 +60,12 @@ export class AppComponent {
   isFlying = false;
 
   toggleLeviosa() {
-    this.isFlying = !this.isFlying;
+    if (this.isFlying) return;
+
+    this.isFlying = true;
+    setTimeout(() => {
+      this.isFlying = false; // Reset après que les cartes aient fini de s’envoler
+    }, 3000);
   }
 
   addItem(item: number) {
