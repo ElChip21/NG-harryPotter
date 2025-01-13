@@ -20,7 +20,6 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
       state('slytherin', style({ borderWidth: '2px', borderColor: '#2E8B57' })),
       state('ravenclaw', style({ borderWidth: '2px', borderColor: '#4B8B9E' })),
       state('hufflepuff', style({ borderWidth: '2px', borderColor: '#F9E600' })),
-      transition('* => *', animate('300ms ease-in-out'))
     ])
   ],
   selector: 'app-product-card',
