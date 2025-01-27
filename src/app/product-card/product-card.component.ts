@@ -37,7 +37,7 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
       </button>
     </div>
 
-    <p class="text-sm text-gray-600 mb-2">{{ product.createdDate | date: 'mediumDate':'fr' }}</p>
+    <p class="text-sm text-gray-600 mb-2">{{ product.createdDate | date : 'fullDate' : '' : 'fr' }}</p>
 
     <p class="text-sm text-gray-500 font-medium">{{ product.grade }}</p>
 

@@ -1,2 +1,7 @@
+Pour lancer le projet
+
+npm install
+ng serve
+
 GitHub : https://github.com/ElChip21/NG-harryPotter
 Lien VERCEL : https://ng-harry-potter.vercel.app/

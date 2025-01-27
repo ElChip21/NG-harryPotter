@@ -20,11 +20,11 @@ import { ProductService } from './product.service';
           <h2 class="text-xl text-gray-600 mt-2">{{ countFav }} 💚 favoris</h2>
           <div class="text-center mb-6">
             <button 
-              class="px-4 py-2 bg-amber-600 text-black rounded-md hover:bg-amber-200 focus:outline-none transition-all"
+              class="px-4 py-2 bg-green-600 text-black rounded-md hover:bg-green-200 focus:outline-none transition-all"
               (click)="toggleLeviosa()">
               ✨ Wingardium Leviosa ! ✨
             </button>
-            <p class="text-sm text-amber-400 mt-2">(Clique pour lancer un sort 💫)</p>
+            <p class="text-sm text-green-400 mt-2">(Clique pour lancer un sort 💫)</p>
           </div>
           <div class="mt-4">
             <select [(ngModel)]="sortSelected" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300">
